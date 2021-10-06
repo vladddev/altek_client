@@ -1,0 +1,94 @@
+html, body, #__nuxt, #__layout, #inspire, .v-application--wrap, .v-content {
+  height: 100%!important;
+  max-height: 100%!important;
+  overflow: hidden!important;
+}
+
+.page-main-content {
+  height: calc(100% - 65px);
+  overflow-y: auto;
+  overflow-y: overlay!important;
+}
+
+body .v-application .secondary {
+  background-color: #1c4450 !important;
+  border-color: #1c4450 !important;
+}
+
+body .v-content {
+  background-color: #f7f7f7;
+}
+
+.single-page-toolbar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 4!important;
+  border-bottom: 2px solid #E0E0E0!important;
+}
+
+.scroll-view {
+  overflow-y: auto;
+}
+
+.scroll-view, .scroll-view > * {
+  scrollbar-color: rgba(0,0,0,.2) transparent;
+  scrollbar-width: thin;
+}
+
+/* width */
+.scroll-view::-webkit-scrollbar, .scroll-view > *::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+.scroll-view::-webkit-scrollbar-track, .scroll-view > *::-webkit-scrollbar-track {
+  background: transparent;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Handle */
+.scroll-view::-webkit-scrollbar-thumb, .scroll-view *::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.2);
+  border-radius: 10px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+
+.scroll-view::-webkit-scrollbar-button, .scroll-view *::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.scroll-view::-webkit-scrollbar-corner, .scroll-view *::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.scroll-overlay {
+  overflow-y: overlay!important;
+}
+
+.justify-between {
+  justify-content: space-between!important;
+}
+
+.nowrap {
+  white-space: nowrap!important;
+}
+
+.text-block--blue {
+  background-color: #2196f31c;
+  color: #2196F3;
+  padding: 1px 10px;
+  border-radius: 20px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
